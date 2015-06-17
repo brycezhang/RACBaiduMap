@@ -1,0 +1,19 @@
+PODS:
+  - BaiduMapAPI (2.7.0)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
+
+DEPENDENCIES:
+  - BaiduMapAPI (~> 2.7.0)
+  - ReactiveCocoa (~> 2.5)
+
+SPEC CHECKSUMS:
+  BaiduMapAPI: d6433624b0b4dd156f2d842f394a5011b02a6401
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+
+COCOAPODS: 0.37.2
