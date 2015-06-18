@@ -11,6 +11,6 @@
 
 @interface BMKLocationService (RAC)
 
-- (RACSignal *)rac_updateSignal;
+- (RACSignal *)rac_updateLocationSignal;
 
 @end

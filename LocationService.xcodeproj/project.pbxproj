@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		023E04E01B32722B0067CB3F /* BMKGeoCodeSearch+RAC.m in Sources */ = {isa = PBXBuildFile; fileRef = 023E04DF1B32722B0067CB3F /* BMKGeoCodeSearch+RAC.m */; };
 		02FB69CA1B315F6F0082FBD1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 02FB69C91B315F6F0082FBD1 /* main.m */; };
 		02FB69CD1B315F6F0082FBD1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 02FB69CC1B315F6F0082FBD1 /* AppDelegate.m */; };
 		02FB69D01B315F6F0082FBD1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02FB69CF1B315F6F0082FBD1 /* ViewController.m */; };
@@ -30,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		023E04DE1B32722B0067CB3F /* BMKGeoCodeSearch+RAC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "BMKGeoCodeSearch+RAC.h"; path = "Classes/BMKGeoCodeSearch+RAC.h"; sourceTree = "<group>"; };
+		023E04DF1B32722B0067CB3F /* BMKGeoCodeSearch+RAC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "BMKGeoCodeSearch+RAC.m"; path = "Classes/BMKGeoCodeSearch+RAC.m"; sourceTree = "<group>"; };
 		02FB69C41B315F6F0082FBD1 /* LocationService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationService.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02FB69C81B315F6F0082FBD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02FB69C91B315F6F0082FBD1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -106,6 +109,8 @@
 				02FB69F11B31689D0082FBD1 /* YYKLocationManager.m */,
 				02FB69F31B316C8F0082FBD1 /* BMKLocationService+RAC.h */,
 				02FB69F41B316C8F0082FBD1 /* BMKLocationService+RAC.m */,
+				023E04DE1B32722B0067CB3F /* BMKGeoCodeSearch+RAC.h */,
+				023E04DF1B32722B0067CB3F /* BMKGeoCodeSearch+RAC.m */,
 			);
 			path = LocationService;
 			sourceTree = "<group>";
@@ -292,6 +297,7 @@
 				02FB69F51B316C8F0082FBD1 /* BMKLocationService+RAC.m in Sources */,
 				02FB69F21B31689D0082FBD1 /* YYKLocationManager.m in Sources */,
 				02FB69CD1B315F6F0082FBD1 /* AppDelegate.m in Sources */,
+				023E04E01B32722B0067CB3F /* BMKGeoCodeSearch+RAC.m in Sources */,
 				02FB69CA1B315F6F0082FBD1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,8 +426,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LocationService/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7c02bbb3-1c35-48ff-aad7-2637ba3c3d80";
 			};
 			name = Debug;
 		};
@@ -431,8 +439,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LocationService/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7c02bbb3-1c35-48ff-aad7-2637ba3c3d80";
 			};
 			name = Release;
 		};

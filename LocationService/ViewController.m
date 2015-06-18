@@ -18,12 +18,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+}
 
-    [[YYKLocationManager sharedInstance].updateLocationSignal subscribeNext:^(NSString *address) {
-         NSLog(@"address:%@", address);
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [[YYKLocationManager sharedInstance].updateLocationSignal subscribeNext:^(BMKReverseGeoCodeResult *result) {
+         NSLog(@"address:%@", result.address);
          [[YYKLocationManager sharedInstance] stopUpdateLocation];
      } error:^(NSError *error) {
          NSLog(@"error:%@", error);
+         [[YYKLocationManager sharedInstance] stopUpdateLocation];
      }];
 
     [[YYKLocationManager sharedInstance] startUpdateLocation];
